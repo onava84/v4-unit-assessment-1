@@ -72,7 +72,7 @@ function checkGroceryCount() {
         return `'That looks like a big trip' from the function`
     } else if (groceries.length === 1 ) {
         return `1 item`
-    } else if (groceries.length >= 1 && groceries.length <= 5) {
+    } else if (groceries.length > 1 && groceries.length <= 5) {
         return `${groceries.length} items`
     }
 }
