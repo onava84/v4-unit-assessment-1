@@ -23,6 +23,9 @@ try {
 //the string "Hey " plus the name.
 
 //Code here
+function hey(name) {
+  return `Hey ${name}`
+}
 
 ///////////////////Problem 2//////////////////
 //Create a function called hi, using a function
@@ -30,6 +33,9 @@ try {
 //the string "Hi " plus the name.
 
 //Code here
+let hi = function(name) {
+  return `Hi ${name}`
+}
 
 ///////////////////Problem 3//////////////////
 //Create a function called hello, using an arrow
@@ -37,6 +43,8 @@ try {
 //the string "Hello " plus the name.
 
 //Code here
+let hello = name => `Hello ${name}`
+
 
 ///////////////////Problem 4//////////////////
 //Create a function named fun, which takes in
@@ -46,6 +54,10 @@ try {
 //variable called funTimes.
 
 //Code here
+function fun(string) {
+  return `${string}!!!!!`
+}
+let funTimes = fun("Yay")
 
 //////////////////PROBLEM 5////////////////////
 
@@ -56,12 +68,21 @@ try {
 //should return the SECOND callback param invoked.
 
 //Code here
+function invokesCallbacks(number,callback1, callback2) {
+  if (number > 10) {
+    return callback1()
+  } else {
+    return callback2()
+  }
+}
+
 
 //////////////////PROBLEM 6////////////////////
 
 //Within the function timedGreeting below, create a setTimeout (a native javascript method) that assigns the result of invoking the callback parameter to the variable greeting, after 1 second.  If you don't know how to use setTimeout you can find information here: https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout
 
 let greeting
+
 
 //////////////////PROBLEM 7////////////////////
 
@@ -73,6 +94,10 @@ let greeting
 function addNumbers(value) {
   var myNumbers = []
   //Code here
+  for (let i = 0; i < value; i++) {
+    myNumbers[i] = i;
+  }
+  return myNumbers
 }
 
 //////////////////PROBLEM 8////////////////////
@@ -85,6 +110,10 @@ function addNumbers(value) {
 function backwardsGreeting(arr) {
   let greetings = []
   //Code here
+  for (let i = arr.length -1; i >= 0; i--) {
+    greetings.push(`Hello, ${arr[i]}`)
+  }
+  return greetings
 }
 
 //////////////////PROBLEM 9////////////////////
@@ -96,4 +125,8 @@ function backwardsGreeting(arr) {
 
 function leapFrog(arr) {
   //Code here
+  for (let i = 0; i < arr.length; i+=2) {
+    arr[i] = `${arr[i]} frog`
+  }
+  return arr
 }

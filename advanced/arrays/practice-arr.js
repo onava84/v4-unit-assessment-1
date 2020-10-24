@@ -6,6 +6,7 @@
 //"red", "blue", "brown" in the array.
 
 //Code here
+let rubberDucks = ["yellow", "red", "blue", "brown"]
 
 //////////////////PROBLEM 2////////////////////
 
@@ -14,13 +15,13 @@
 //What is the first numbered index of an array?
 
 // var answer = 1
-// var answer = 0
+var answer = 0
 
 //How do you access the length of an array, such as the array
 //you created above called rubberDucks?
 
 // var arrayLength = Array.length(rubberDucks)
-// var arrayLength = rubberDucks.length
+var arrayLength = rubberDucks.length
 // var arrayLength = rubberDucks.len
 // var arrayLength = rubberDucks.length()
 
@@ -31,7 +32,9 @@
 //The passed-in array should NOT be modified.
 
 //Code here
-
+function getLast(arr) {
+ return arr.slice(arr.length-1);
+}
 //////////////////PROBLEM 4////////////////////
 
 //Create a function called getElement that takes in two
@@ -40,6 +43,9 @@
 //The passed-in array should NOT be modified.
 
 //Code here
+function getElement(arr, idx) {
+    return arr[idx]
+}
 
 //////////////////PROBLEM 5////////////////////
 
@@ -49,13 +55,19 @@
 //to the given value. You do not need to return the array.
 
 //Code here'
-
+function changeElement(arr, idx, value) {
+    arr[idx] = value
+}
 //////////////////PROBLEM 6////////////////////
 
 //Create a function called trim that takes in an array and removes
 //the last element. trim should return the array.
 
 //Code here
+function trim(arr) {
+    arr.pop()
+    return arr
+}
 
 //////////////////PROBLEM 7////////////////////
 
@@ -65,6 +77,12 @@
 //addMoreDucks should return the array.
 
 //Code here
+function addMoreDucks(arr) {
+ if (arr.length > 4) {
+     arr[2] = "42 ducks"
+ }
+ return arr
+}
 
 //////////////////PROBLEM 8////////////////////
 
@@ -73,7 +91,12 @@
 //the 3rd element of the array. cutItOut should return the array.
 
 //Code here
-
+function cutItOut(arr) {
+    if (arr.length > 4) {
+        arr.splice(2,1)
+    }
+    return arr
+}
 //////////////////PROBLEM 9////////////////////
 
 //Create a function called changeName that takes in an array
@@ -81,3 +104,11 @@
 //changeName should return the array.
 
 //Code here
+function changeName(arr) {
+    for (let i = 0; i < arr.length ; i++) {
+        if (arr[i] === "Tolkn") {
+            arr[i] = "Tolkien"
+        }
+    }
+    return arr
+}
