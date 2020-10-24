@@ -12,13 +12,13 @@ let duck = {
 //1. Using dot notation to access the duck's "name" property.
 // let accessByDotNotation = duck."name"
 // let accessByDotNotation = Object[duck].name
-// let accessByDotNotation = duck.name
+let accessByDotNotation = duck.name
 
 //2. Using bracket notation to access duck's "bites" property.
 // let accessByBracketNotation = duck{"bites"}
 // let accessByBracketNotation = Object[duck][bites]
 // let accessByBracketNotation = duck[bites]
-// let accessByBracketNotation = duck['bites']
+let accessByBracketNotation = duck['bites']
 // let accessByBracketNotation = duck(bites)
 
 ///////////////////Problem 2///////////////////
@@ -31,6 +31,9 @@ let person = {
   name: 'Ella',
   city: 'Edinburgh',
   job: 'Leader of Ghost Tours',
+  moveCities: function(newCity) {
+    person.city = newCity
+  }
 }
 
 //CODE HERE
@@ -48,8 +51,8 @@ let doors = {
 }
 
 //Code here
-
-//////////////////PROBLEM 4////////////////////
+let doorKeys =  Object.keys(doors)
+  //////////////////PROBLEM 4////////////////////
 
 //Based on the following set of functions, alter
 //the provided arrays to contain only the strings
@@ -84,13 +87,7 @@ function greekUnderworld(season) {
 
 //This array should only contain variables accessible in global scope
 let greekGlobalScope = [
-  'hades',
-  'zeus',
-  'olympians',
-  'hera',
-  'gatekeeper',
-  'response',
-  'persephone',
+  'hades'
 ]
 
 //This array should only contain variables accessible in scope of the
@@ -98,11 +95,6 @@ let greekGlobalScope = [
 let greekPantheonScope = [
   'hades',
   'zeus',
-  'olympians',
-  'hera',
-  'gatekeeper',
-  'response',
-  'persephone',
 ]
 
 //This array should only contain variables accessible in scope of the
@@ -111,19 +103,13 @@ let greekPantheonLoopScope = [
   'hades',
   'zeus',
   'olympians',
-  'hera',
-  'gatekeeper',
-  'response',
-  'persephone',
+  'hera'
 ]
 
 //This array should only contain variables accessible in scope of the
 //the function greekUnderworld
 let greekUnderworldScope = [
   'hades',
-  'zeus',
-  'olympians',
-  'hera',
   'gatekeeper',
   'response',
   'persephone',
@@ -133,9 +119,6 @@ let greekUnderworldScope = [
 //if statement of the function greekUnderworld
 let greekUnderworldIfStatementScope = [
   'hades',
-  'zeus',
-  'olympians',
-  'hera',
   'gatekeeper',
   'response',
   'persephone',
