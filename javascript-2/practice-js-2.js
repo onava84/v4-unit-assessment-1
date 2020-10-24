@@ -10,6 +10,7 @@
 */
 
 //CODE HERE
+const gitDefinition = 'git is a version control application'
 
 //////////////////PROBLEM 2////////////////////
 /*
@@ -18,6 +19,7 @@
 */
 
 //CODE HERE
+const gitHubDefinition = `GitHub is a cloud service to connect with git on your machine`
 
 //////////////////PROBLEMS 3 - 9////////////////////
 /*
@@ -34,6 +36,10 @@
 */
 
 //CODE HERE
+let init = {
+    description: `we use git init to start the git app on the console`, 
+    code: `git init`
+}
 
 //////////////////PROBLEM 4////////////////////
 /*
@@ -42,6 +48,10 @@
 */
 
 //CODE HERE
+let clone = {
+    description: `we use git clone to clone a repository previously forked`,
+    code: `git clone +url`
+}
 
 //////////////////PROBLEM 5////////////////////
 /*
@@ -50,6 +60,10 @@
 */
 
 //CODE HERE
+let status = {
+    description: `we use git status to se which files we have changed and save it but not added to commit`,
+    code: `git status`
+}
 
 //////////////////PROBLEM 6////////////////////
 /*
@@ -58,6 +72,10 @@
 */
 
 //CODE HERE
+let add = {
+    description: `we use git add to add edited files to commit`,
+    code: `git add .`
+}
 
 //////////////////PROBLEM 7////////////////////
 /*
@@ -66,6 +84,10 @@
 */
 
 //CODE HERE
+let commit = {
+    description: `we use git commit like to upload the files after we added`,
+    code: `git commit -m "text"`
+}
 
 //////////////////PROBLEM 8////////////////////
 /*
@@ -74,6 +96,10 @@
 */
 
 //CODE HERE
+let addRemote = {
+    description: `we use the remote to indicate where do we want to send the files`,
+    code: `git remote add origin`
+}
 
 //////////////////PROBLEM 9////////////////////
 /*
@@ -82,3 +108,7 @@
 */
 
 //CODE HERE
+let push = {
+    description: `we use git push to upload the files to the cloud`,
+    code: `git push`
+}
