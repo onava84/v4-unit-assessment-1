@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+p {
+    line-height: 1.3em;
+}
+/* Header */
+header {
+    background-color: #ff9999;
+    padding: 20px;
+    padding-top: 60px;
+    border-bottom: solid 1px black;
+}
+h1 {
+    display: inline-block;
+    font-size: 2em;
+    font-weight: bold;
+}
+nav {
+    display: inline-block;
+}
+li {
+    display: inline;
+    font-size: 1.2em;
+    padding: 0 30px;
+}
+/* Sections */
+.first-section, .second-section {
+ padding: 20px;
+}
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 25px;
+    margin-top: 35px;
+}
+.inner-square-1, .inner-square-2 {
+    border: dotted 6px black;
+    padding: 20px;
+    clear: both;
+}
+.html-logo {
+    float: left;
+    width: 200px;
+}
+.p1, .p3, .p4 {
+    margin-bottom: 30px;
+}
+.css-logo {
+    float: right;
+}
+.second-section {
+    padding-top: 0px;
+}
